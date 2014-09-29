@@ -10,11 +10,16 @@ public with sharing class NewAccountPageObject extends cinnamon.PageObject{
 	public void saveNewAccount(String accountName) {
 		accountNameInput.sendKeys(accountName);
 		saveButton.click();
-		getWait().until(cinnamon.expectedConditions.titleToContain('accountName'));
+		getWait().until(cinnamon.expectedConditions.titleToContain(accountName));
 	}
 	
 	public override String getPathAndQuery(Map<String, String> params) {
-		return '/apex/NewAccountPage';
+		if(params==null) {
+			return '/apex/NewAccountPage';
+		} else {
+			return '/apex/NewAccountPage?id=' + params.get('accId');
+		}
+
 	}
 	
 	public static NewAccountPageObject getInstance(cinnamon.context context) {

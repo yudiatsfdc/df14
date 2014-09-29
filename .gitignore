@@ -1,3 +1,9 @@
+# eclipse
 .project
 .settings
+# force.com
 Referenced\ Packages
+# sublime 
+*sublime*
+config/
+
