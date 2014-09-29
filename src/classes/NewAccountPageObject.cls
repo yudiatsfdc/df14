@@ -16,4 +16,8 @@ public with sharing class NewAccountPageObject extends cinnamon.PageObject{
 	public override String getPathAndQuery(Map<String, String> params) {
 		return '/apex/NewAccountPage';
 	}
+	
+	public static NewAccountPageObject getInstance(cinnamon.context context) {
+		return (NewAccountPageObject) context.getPageObject(NewAccountPageObject.class);
+	}
 }
