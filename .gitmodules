@@ -1,0 +1,3 @@
+[submodule "build/sf-cli"]
+	path = build/sf-cli
+	url = https://github.com/yudiatsfdc/sf-cli.git
