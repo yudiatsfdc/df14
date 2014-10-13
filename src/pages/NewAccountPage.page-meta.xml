@@ -4,4 +4,14 @@
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
     <label>NewAccountPage</label>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>0</minorNumber>
+        <namespace>cinnamon</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>5</minorNumber>
+        <namespace>selenium1</namespace>
+    </packageVersions>
 </ApexPage>
