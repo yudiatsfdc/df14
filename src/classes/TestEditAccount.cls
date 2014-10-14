@@ -1,7 +1,6 @@
 public with sharing class TestEditAccount extends cinnamon.BaseTest {
 	public override void setup(cinnamon.Context context) {
-		Account acc = new Account(name='Newest Account');
-		insert acc;
+		Account acc = AccountUtil.create('New Acc');
 		context.put('accId', acc.id);
 	}
 
